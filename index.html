@@ -1,0 +1,90 @@
+  <!DOCTYPE html>
+  <html lang="fr">
+  <head>    
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>CV — Rafael Solis Ramos</title>
+      <style>
+          * { margin: 0; padding: 0; box-sizing: border-box; }
+
+          body {
+              background: #000d08;
+              color: #fff;
+              font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+              height: 100vh;
+              display: flex;
+              flex-direction: column;
+          }
+
+          header {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 16px 32px;
+              background: rgba(0, 10, 6, 0.95);
+              border-bottom: 1px solid rgba(80, 200, 160, 0.15);
+              flex-shrink: 0;
+          }
+
+          .identity h1 {
+              font-size: 17px;
+              font-weight: 600;
+              letter-spacing: -0.02em;
+              color: #fff;
+          }
+
+          .identity p {
+              font-size: 13px;
+              color: oklch(0.72 0.18 175);
+              margin-top: 2px;
+          }
+
+          .actions {
+              display: flex;
+              gap: 12px;
+              align-items: center;
+          }
+
+          a.btn {
+              text-decoration: none;
+              padding: 8px 18px;
+              border-radius: 6px;
+              font-size: 13px;
+              font-weight: 500;
+              transition: opacity 0.2s;
+          }
+
+          a.btn:hover { opacity: 0.8; }
+
+          a.btn-dl {
+              background: oklch(0.68 0.20 175);
+              color: #000;
+          }
+
+          a.btn-portfolio {
+              border: 1px solid oklch(0.68 0.20 175 / 0.5);
+              color: oklch(0.80 0.18 175);
+              background: transparent;
+          }
+
+          iframe {
+              flex: 1;
+              width: 100%;
+              border: none;
+          }
+      </style>
+  </head>
+  <body>
+      <header>
+          <div class="identity">
+              <h1>Rafael Solis Ramos</h1>
+              <p>Développeur Fullstack</p>
+          </div>
+          <div class="actions">
+              <a class="btn btn-portfolio" href="https://myfaro.dev" target="_blank">myfaro.dev</a>
+              <a class="btn btn-dl" href="./cv.pdf" download>Télécharger le CV</a>
+          </div>
+      </header>
+      <iframe src="./cv.pdf"></iframe>
+  </body>
+  </html>
